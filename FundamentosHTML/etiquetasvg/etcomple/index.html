@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Ejercicio con otras etiquetas para svg</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ejercicio para otras etiquetas en svg</h1>
+    </header>
+    <section>
+      <article class="">
+        <svg width="1200px" height="1200px" viewBox="0 0 1200 1200">
+          <defs>
+            <rect id="Cua" width="150" heiht="120" stroke="black" stroke-width="5"  />
+            <circle id="test"  cx="150" cy="120" r="40"  stroke="black" stroke-width="5" />
+            <line id="o" x1="0" y1="0" stroke="black"  stroke-width="2" />
+
+          </defs>
+          <use x="200" y="200" fill="blue" xlink:href="#Cua" />
+          <use x="400" y="200" fill="red" xlink:href="#Cua" />
+          <use x="450" y="250" fill="red" xlink:href="#test" />
+          <use  x2="200" y2="150"  xlink:href="#o" />
+
+
+          <rect  width="150" heiht="120"  fill="blue" stroke="black" stroke-width="5" />
+          <circle cx="150" cy="120" r="40" fill="blue" stroke="black" stroke-width="5" />
+
+        </svg>
+
+      </article>
+    </section>
+  </body>
+</html>
