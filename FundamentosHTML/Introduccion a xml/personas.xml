@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persona>
+	<nombre>Gerardo</nombre>
+	<apellidos>Hernandez Diaz</apellidos>
+	<edad>30 años</edad>
+	<correo-electronico>ghd@hotmail.com</correo-electronico>
+</persona>
+<persona>
+	<nombre>Raul</nombre>
+	<apellidos>Medina Rojas</apellidos>
+	<edad>22 años</edad>
+	<correo-electronico>medina@hotmail.com</correo-electronico>
+</persona>

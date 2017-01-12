@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura  id="01221" fecha="11-12-2016">
+	<cliente>
+		<nombre>Gerardo</nombre>
+		<apellidos>Hernandez Diaz</apellidos>
+		<telefono>954-120-6636</telefono>
+	</cliente>
+	<articulos>
+		<articulo id="1">
+			<descripcion>zapato escolar</descripcion>
+			<precio-unitario>350.50</precio-unitario>
+			<precio-final>380.00</precio-final>
+			<cantidad>2</cantidad>		
+		</articulo>
+		<articulo id="2">
+			<descripcion>zapato escolar</descripcion>
+			<precio-unitario>350.50</precio-unitario>
+			<precio-final>380.00</precio-final>
+			<cantidad>2</cantidad>		
+		</articulo>
+	</articulos>
+	<precio-total>760</precio-total>
+</factura> 
