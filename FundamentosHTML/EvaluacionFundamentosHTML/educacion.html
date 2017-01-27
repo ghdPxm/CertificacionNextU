@@ -27,28 +27,33 @@
       <h2>Educación</h2>
       <article >
         <table border="1">
-          <tr>
-            <td>Año</td>
-            <td>Institución</td>
-            <td>Lugar</td>
-            <td>¿Culminó?</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Año</th>
+              <th>Institución</th>
+              <th>Lugar</th>
+              <th>¿Culminó?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2007</td>
+              <td>Preparatoria</td>
+              <td>Puerto Escondido, Oax.</td>
+              <td>Si</td>
+            </tr>
+            <tr>
+              <td>2011</td>
+              <td>Universidad</td>
+              <td>Puerto Escondido, Oax.</td>
+              <td>Si</td>
+            </tr>
+          </tbody>
         </table>
+        <hr>
       </article>
       <article>
-        <h3>Agregar Estudios</h3>
+        <h3>Agregar Educación</h3>
         <form>
           <label for="anio"><strong>Año:</strong></label>
           <select class="" name="anio" required>
@@ -68,7 +73,7 @@
           <label for="insti"><strong>Institución:</strong></label>
           <input type="text" name="insti" value="" required><br><br>
           <label for="lugar"><strong>Lugar:</strong></label>
-          <textarea name="lugar" rows="5" cols="20" required></textarea><br><br>
+          <textarea name="lugar" rows="5" cols="25" required></textarea><br><br>
           <label for="pregunta"><strong>¿Culmino?</strong></label>
           <input type="radio" name="pregunta" value="Si" checked required>Si
           <input type="radio" name="pregunta" value="No" required>No<br><br>
