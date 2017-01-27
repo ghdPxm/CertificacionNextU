@@ -50,15 +50,28 @@
       <article>
         <h3>Agregar Estudios</h3>
         <form>
-          <label for="anio">Año:</label>
-          <input type="text" name="anio" value="" required><br>
-          <label for="insti">Institución:</label>
-          <input type="text" name="insti" value="" required><br>
-          <label for="lugar">Lugar:</label>
-          <textarea name="lugar" rows="2" cols="20" required></textarea><br>
-          <label for="pregunta">¿Culmino?</label>
-          <input type="radio" name="pregunta" value="Si" required>
-          <input type="radio" name="pregunta" value="No" required><br>
+          <label for="anio"><strong>Año:</strong></label>
+          <select class="" name="anio" required>
+            <option value="2016" selected>2016</option>
+            <option value="2015" >2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2007">2007</option>
+            <option value="2005">2005</option>
+          </select> <br><br>
+          <label for="insti"><strong>Institución:</strong></label>
+          <input type="text" name="insti" value="" required><br><br>
+          <label for="lugar"><strong>Lugar:</strong></label>
+          <textarea name="lugar" rows="5" cols="20" required></textarea><br><br>
+          <label for="pregunta"><strong>¿Culmino?</strong></label>
+          <input type="radio" name="pregunta" value="Si" checked required>Si
+          <input type="radio" name="pregunta" value="No" required>No<br><br>
           <input type="submit" name="eviar" value="Enviar">
         </form>
       </article>
