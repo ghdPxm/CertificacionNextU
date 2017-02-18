@@ -1,0 +1,15 @@
+body{
+  color: #ffffff;
+  background-color: #000000;
+  font-family: verdana;
+}
+h1{
+  font-family: arial;
+}
+a{
+  color: inherit;
+}
+div{
+  margin-top: 10px;
+  margin-left: 100px;
+}
