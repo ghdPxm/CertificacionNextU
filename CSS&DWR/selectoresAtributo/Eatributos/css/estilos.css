@@ -1,0 +1,44 @@
+body{
+  background-color: grey;
+}
+
+footer{
+  margin-top: 20px;
+}
+
+img{
+  border-radius: 10px;
+}
+#indice{
+
+}
+#Contenedor{
+  font-family: helvetica;
+  font-size: 16px;
+}
+#Encabezado{
+  display: block;
+  margin: 0px auto;
+}
+.itemIndice{
+  list-style-type: upper-roman;
+}
+.enlace{
+  color: red;
+}
+
+/*Estilo para todas las etiquetas a que en su atributo href inicien con el valor #*/
+a[href^='#']{
+  color: orange;
+}
+
+/*Estilo para todas las imagenes con extension .svg*/
+img[src$='.svg']{
+  border-radius: 50px;
+}
+
+/*Estilo para todas las demas imagenes que se encuentren en el sitio*/
+img[src$='.jpg'], img[src$='.png']{
+  border: 1px solid black;
+  border-radius: 25px;
+}
