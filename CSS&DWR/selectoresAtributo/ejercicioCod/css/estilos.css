@@ -1,0 +1,22 @@
+body{
+ margin: 20px;
+ font-family: Verdana;
+}
+
+p > textarea{
+  width: 200px;
+}
+/*Selector de atributo para el elemento input con name=email al inicio de ese valor de atributo*/
+input[name^='email']{
+background-color: #eeeeee;
+}
+/*pseudoclase que permite agregar un estilo a los elementos que conicidan con la condicion an+b-1
+es decir que los elementos hijos han sido dividos en grupos a elementos cada uno*/
+p:nth-child(3){/*el tercer elemento p */
+  color: red;
+}
+
+/*selector multiple*/
+p, label{
+  font-family: Tahoma;
+}
