@@ -1,7 +1,5 @@
-body{
-  background-color: red;
-  font-family: monospace;
-  font-size: 36px;
+ body{
+  background-color: gray;
 }
 
 footer{
@@ -15,10 +13,16 @@ img{
 
 }
 #Contenedor{
-  font-family: verdana;
+  font-family: helvetica;
   font-size: 16px;
 }
 #Encabezado{
   display: block;
   margin: 0 auto;
+}
+.itemIndice{
+  list-style-type: circle;
+}
+.enlace{
+  color: red;
 }
