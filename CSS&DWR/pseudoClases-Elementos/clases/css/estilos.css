@@ -1,0 +1,127 @@
+body{
+  background-color: grey;
+}
+
+footer{
+  margin-top: 20px;
+}
+
+img{
+  border-radius: 10px;
+}
+#indice{
+
+}
+#Contenedor{
+  font-family: helvetica;
+  font-size: 16px;
+}
+#Encabezado{
+  display: block;
+  margin: 0px auto;
+}
+.itemIndice{
+  list-style-type: upper-roman;
+}
+.enlace{
+  color: red;
+}
+
+/*Estilo para todas las etiquetas a que en su atributo href inicien con el valor #*/
+a[href^='#']{
+  color: orange;
+}
+
+/*Estilo para todas las imagenes con extension .svg*/
+img[src$='.svg']{
+  border-radius: 50px;
+}
+
+/*Estilo para todas las demas imagenes que se encuentren en el sitio*/
+img[src$='.jpg'], img[src$='.png']{
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+/*Estilo para agregar a todos los elementos del DOM un margen definido por las  medidas del viewport vh & vw*/
+*{
+  margin: 1vh 1vw;
+}
+/*Estilo aplicable para aquellos elementos que son presedidos por otros del mismo tipo*/
+h1 + h2{
+  text-decoration: underline;
+}
+/*Estilo que se aplica aquellos elementos que se encuentras despues de un elemento derterminado*/
+/*Todos los p que esten despues de un h2*/
+h2 ~ p{
+  text-align: justify;
+}
+
+/*Estilo aplicable a aquellos elementos que sean hijos directos de un elemento determinado*/
+/*Todos los h2 hijos directos de los articulos*/
+article > h2{
+  text-decoration: underline;
+}
+
+/*Estilo que se aplica de forma desendeten a cada uno de los elementos contendidos por una etiequeta en particular*/
+/*Normalmente es aplicado a la etiqueta ul de forma desendente*/
+ul li{
+  list-style-type: circle;
+}
+/*Aqui vamos con pseudo clases y pseudo elementos*/
+
+
+/****************************/
+/*pseudo-clases*/
+/*Estilo para que todos los enlaces externos visitados cambien de color*/
+a[href^='http://']:visited{
+  color: red;
+}
+/*Estilo para que cuando se pase el cursor por un enlace se ponga de color verde*/
+a:hover{
+  color: green;
+}
+/*Estilo para  que el primer hijo de h2 tenga una decoraccion en el texto*/
+h2:first-child{
+  text-decoration: underline;
+}
+/*Estilo para que cuando se coloque el cursor sobre los input estos cambien de tamaño*/
+input:focus{
+  width: 160px;
+  height: 140px;
+  font-size: 45px;
+}
+
+
+/********************************/
+/*pseudo-elementos*/
+
+/*Agregar letra capital a un parrafo*/
+p::first-letter{
+  text-transform: capitalize;
+}
+
+/*Estilo para que la primera linea de un parrafo tenga un tamaño en particular*/
+p::first-line{
+  font-size: 32px;
+}
+
+p::selection{
+
+}
+
+
+/**Estilo para agregar contenido al primer hijo a contenido en una lista desordenada que esta en un article de nombre estudios*/
+#Estudios>ul>li:first-child>a::after{
+  content: ' - Se agrega al final';
+}
+
+/**Estilo para agregar contenido al ultimo hijo a contenido en una lista desordenada que esta en un article de nombre estudios*/
+#Estudios>ul>li:last-child>a::before{
+  content: ' - Se agrega al inicio - ';
+}
+
+/**Estilo para agregar contenido al segundo hijo a contenido en una lista desordenada que esta en un article de nombre estudios*/
+#Estudios>ul>li:nth-child(2)>a::after{
+  content: ' *- Hijo #2 -* ';
+}
