@@ -1,12 +1,16 @@
 <html>
 	<head>
 		<title>HTML Base</title>
-		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="estilos/estilos.css">
 	</head>
 	<body>
 		<h1>Cartelera de vuelos - Aeropuerto el mirador</h1>
+		<navbar id="menu-principal">
+			<a href="vuelos_por_hora.html">Vuelos por hora</a>
+			<a href="vuelos_por_destino.html">Vuelos por destino</a>
+		</navbar>
 		<h2>Llegadas</h2>
-		<table border="1" cellpadding="10" cellspacing="0">
+		<table>
 			<thead>
 				<tr>
 					<th>Aerolinea</th>
@@ -42,7 +46,7 @@
 		</table>
 
 		<h2>Salidas</h2>
-		<table border="1" cellpadding="10" cellspacing="0">
+		<table class="sombra">
 			<thead>
 			<tr>
 				<th>Aerolinea</th>
@@ -62,6 +66,6 @@
 			</tr>
 			</tbody>
 		</table>
-
+	<footer>Derechos Reservados</footer>
 	</body>
 </html>
